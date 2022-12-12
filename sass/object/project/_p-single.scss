@@ -1,0 +1,39 @@
+.p-single {
+
+}
+
+.p-single__inner.l-inner {
+    max-width: rem(800);
+}
+
+.p-single__title {
+    margin-top: rem(25);
+}
+
+.p-single__date {
+    font-family: $font-family-sub;
+    color: #CECECE;
+    font-weight: 700;
+    font-size: rem(20);
+    letter-spacing: 0.032em;
+    line-height: 1;
+    margin-top: rem(20);
+}
+
+.p-single__body {
+    margin-top: rem(60);
+
+    p {
+        font-weight: 500;
+        color: #333333;
+        line-height: (32 / 16);
+    }
+}
+
+.p-single__box01 + .p-single__box01 {
+    margin-top: rem(48);
+}
+
+.p-single__content {
+    margin-top: rem(60);
+}

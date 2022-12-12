@@ -1,0 +1,27 @@
+.p-contact-button {
+
+}
+
+.p-contact-button__submit {
+	-webkit-appearance: none;
+	background-color: #000;
+	background-image: none;
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: rem(14);
+	padding: rem(11) rem(66);
+	text-decoration: none;
+}
+
+.p-contact-button__submit:hover,
+.p-contact-button__submit:focus {
+	outline: none;
+}
+
+.p-contact-button__submit::-moz-foucus-inner {
+	border: none;
+	padding: 0;
+}

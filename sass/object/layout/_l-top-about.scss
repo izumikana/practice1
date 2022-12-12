@@ -1,0 +1,11 @@
+.l-top-about {
+    margin-top: rem(78);
+
+    @include mq () {
+        max-width: rem(1100);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: rem(120);
+    }
+}

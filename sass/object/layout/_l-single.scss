@@ -1,0 +1,9 @@
+.l-single {
+    margin-top: rem(80);
+    margin-bottom: rem(80);
+
+    @include mq (tab) {
+        margin-top: rem(120);
+        margin-bottom: rem(120);
+    }
+}

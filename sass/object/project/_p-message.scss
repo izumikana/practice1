@@ -1,0 +1,56 @@
+.p-message {
+
+}
+
+.p-message__inner {
+	@include mq(tab) {
+    margin: 0 auto;
+	width: 100%;
+	height: inherit;
+	padding-right: $padding-sp;
+	padding-left: $padding-sp;
+    	max-width: $l-inner + strip-unit($padding-pc) * 2;
+		padding-right: $padding-pc;
+		padding-left: $padding-pc;
+	}
+}
+
+.p-message__img {
+    width: rem(340);
+    margin-right: auto;
+
+    @include mq(tab) {
+        width: rem(420);
+    }
+}
+
+.p-message__wrapper {
+    margin-top: rem(-100);
+    padding: rem(126) rem(29) rem(80) rem(28);
+    background-color: #F0F0F0;
+
+    @include mq (tab) {
+        max-width: rem(770);
+        width: 100%;
+        margin-left: auto;
+        padding: rem(120) rem(185) rem(90);
+    }
+}
+
+.p-message__content {
+    margin-top: rem(25);
+}
+
+
+.p-message__box {
+    margin-top: rem(25);
+}
+
+.p-message__text {
+    font-size: rem(14);
+    line-height: (28 / 14);
+}
+
+.p-message__text:nth-child(n + 2) {
+    margin-top: rem(28);
+}

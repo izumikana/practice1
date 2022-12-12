@@ -1,0 +1,84 @@
+.p-sub-mv {
+    position: relative;
+    height: rem(449);
+}
+
+.p-sub-mv::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    z-index: -2;
+    background-color: #222222;
+    width: 75.5%;
+    height: rem(449);
+
+    @include mq (tab) {
+        height: rem(464);
+        width: 54.16%;
+    }
+}
+
+.p-sub-mv__img::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: rem(387);
+    background-color: rgba($color: #000000, $alpha: 0.34);
+    z-index: 1;
+}
+.p-sub-mv__img {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top;
+    width: 76.5%;
+    height: rem(387);
+    z-index: -1;
+}
+
+.p-sub-mv__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.p-sub-mv__block {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: rem(10);
+    transform: translateY(-50%);
+
+    @include mq () {
+        right: rem(194);
+    }
+}
+.p-sub-mv__title {
+    font-weight: bold;
+    font-size: rem(52);
+    letter-spacing: 0.063em;
+    font-family: $font-family-sub;
+    line-height: (86 / 52);
+
+    @include mq (tab) {
+        font-size: rem(72);
+    }
+}
+
+.p-sub-mv__subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: rem(10);
+
+    @include mq (tab) {
+        font-size: rem(20);
+    }
+}

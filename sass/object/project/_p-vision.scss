@@ -1,0 +1,35 @@
+.p-vision {
+
+}
+
+.p-vision__inner {
+    @include mq (tab) {
+        padding-left: rem(226);
+    }
+}
+
+.p-vision__content {
+    margin-top: rem(37);
+}
+
+.p-vision__subtitle {
+    font-size: rem(24);
+    font-weight: 400;
+}
+
+.p-vision__box {
+    margin-top: rem(35);
+}
+
+.p-vision__text {
+    font-size: rem(14);
+    line-height: (28 / 14);
+
+    @include mq (tab) {
+        font-size: rem(16);
+    }
+}
+
+.p-vision__text:nth-child(n + 2) {
+    margin-top: rem(28);
+}

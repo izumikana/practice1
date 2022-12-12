@@ -1,0 +1,52 @@
+.p-box {
+    @include mq (tab) {
+        max-width: rem(520);
+        width: 100%;
+    }
+}
+
+.p-box__inner {
+    margin: 0 auto;
+	max-width: rem(540); //状況によって変える必要があるかも
+	width: 100%;
+	height: inherit;
+	padding-right: $padding-sp;
+	padding-left: $padding-sp;
+	@include mq(tab) {
+    	max-width: $l-inner + strip-unit($padding-pc) * 2;
+        padding: 0;
+	}
+}
+
+.p-box__img {
+    margin-top: rem(30);
+    position: relative;
+}
+
+.p-box__img::before {
+    position: absolute;
+    padding-top: 67.246%;
+    display: block;
+    width: 100%;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    object-position: center;
+}
+
+.p-box__body,
+.p-box__btn {
+    margin-top: rem(30);
+}
+
+.p-box__text {
+    font-weight: 500;
+}
+
+.p-box__btn {
+    @include mq (tab) {
+        text-align: right;
+    }
+}

@@ -1,0 +1,16 @@
+.p-hamburger__menu {
+	position: absolute;
+	right: rem(54);
+	top: 0;
+}
+
+.p-hamburger__menuText {
+	color: #fff;
+	font-size: rem(10);
+	font-weight: 800;
+	position: absolute;
+	right: rem(15);
+	text-transform: uppercase;
+	top: 0;
+}
+

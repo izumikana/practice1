@@ -1,0 +1,33 @@
+.wp-pagenavi {
+	clear: both;
+	text-align:center;
+
+}
+.wp-pagenavi a, .wp-pagenavi span {
+	color: #fff;
+	background-color: #1C181A;
+	border: 1px solid #1C181A;
+	padding: 8px 15px;
+	margin: 0 2px;
+	white-space: nowrap;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+	text-align: center;
+	text-decoration: none;
+}
+.wp-pagenavi a:hover{
+	color: #FFF;
+	background-color: #FF0037;
+	border-color: #FF0037;
+    }
+.wp-pagenavi span.current{
+	color: #777;
+	background-color: #CFD5DA;
+	border-color: #CFD5DA;
+	font-weight: bold;
+}

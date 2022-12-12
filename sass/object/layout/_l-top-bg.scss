@@ -1,0 +1,21 @@
+.l-top-bg {
+    background-color: #F0F0F0;
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+
+    @include mq (tab) {
+        padding-top: rem(180);
+        margin-top: rem(-100);
+        padding-bottom: rem(60);
+    }
+}
+
+.l-top-bg__inner {
+    @include mq (tab) {
+        display: flex;
+        max-width: rem(1140);
+        padding: 0 rem(20);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

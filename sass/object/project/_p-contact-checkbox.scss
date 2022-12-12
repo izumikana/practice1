@@ -1,0 +1,53 @@
+.p-contact-checkbox__item {
+	// display: none;
+}
+
+.p-contact-checkbox__item + span {
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 0 0 rem(25);
+	position: relative;
+	font-size: rem(14);
+	letter-spacing: 0.04em;
+	line-height: (24 / 14);
+
+	@include mq(tab) {
+		font-size: rem(16);
+	}
+}
+
+.p-contact-checkbox__item + span::before {
+	-webkit-transform: translateY(-50%);
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 2px;
+	content: "";
+	display: block;
+	height: 1em;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1em;
+}
+
+.p-contact-checkbox__item + span::after {
+	-webkit-transform: translateY(-50%) rotate(-45deg);
+	border-bottom: 3px solid #333;
+	border-left: 3px solid #333;
+	content: "";
+	display: block;
+	height: 0.6em;
+	left: 0;
+	margin-top: -0.2em;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(-45deg);
+	transition: all 0.3s ease 0s;
+	width: 1em;
+}
+
+.p-contact-checkbox__item:checked + span::after {
+	opacity: 1;
+}

@@ -1,0 +1,23 @@
+.p-topics {
+
+}
+
+.p-topics__items {
+    margin-top: rem(32);
+
+    @include mq (tab) {
+        max-width: rem(700);
+        width: 100%;
+        margin-left: auto;
+    }
+}
+.p-topics__items.p-topics__items--wide {
+    margin-top: rem(32);
+
+    @include mq (tab) {
+        max-width: initial;
+        width: 100%;
+        margin: auto;
+        margin-top: rem(32);
+    }
+}

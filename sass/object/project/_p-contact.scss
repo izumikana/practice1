@@ -1,0 +1,64 @@
+.p-contact {
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+    background-color: #F2F2F2;
+
+    @include mq (tab) {
+        padding-top: rem(60);
+        padding-bottom: rem(120);
+    }
+}
+
+.p-contact__wrapper {
+    @include mq (tab) {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+}
+
+.p-contact__img {
+    position: relative;
+
+    @include mq (tab) {
+        max-width: rem(580);
+        width: 100%;
+    }
+}
+
+.p-contact__img::before {
+    position: absolute;
+    padding-top: 67.246%;
+    display: block;
+    width: 100%;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    object-position: center;
+}
+
+.p-contact__box {
+    margin-top: rem(30);
+
+    @include mq (tab) {
+        max-width: rem(440);
+        width: 100%;
+        margin-right: rem(80);
+    }
+}
+
+.p-contact__body {
+    margin-top: rem(25);
+}
+
+.p-contact__text {
+    font-weight: 500;
+    color: #333333;
+    line-height: (32 / 16);
+}
+
+.p-contact__btn {
+    margin-top: rem(30);
+}

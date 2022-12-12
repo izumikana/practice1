@@ -1,0 +1,45 @@
+.p-header.headerColorScroll {
+    background-color: #525252;
+    transition: ease 0.4s;
+}
+
+.p-header__inner {
+    padding: 0 rem(15);
+}
+
+.p-header__logo {
+    width: rem(189);
+    max-width: 100%;
+    display: block;
+}
+
+.p-header__drawer {
+	position: absolute;
+	top: rem(20);
+	right: rem(54);
+    margin-right: rem(10);
+}
+
+.p-header__menuText {
+	font-weight: 800;
+	font-size: rem(10);
+	font-family: $font-family-sub;
+	text-transform: uppercase;
+	position: absolute;
+	top: rem(20);
+	right: rem(15);
+	color: #fff;
+	z-index: 999;
+}
+
+.p-header__overlay {
+    background-color: rgba($color: #2222, $alpha: 0.6);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: none;
+}

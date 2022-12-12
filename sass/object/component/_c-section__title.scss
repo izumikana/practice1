@@ -1,0 +1,12 @@
+.c-section__title {
+    font-size: rem(28);
+    letter-spacing: 0.068em;
+    font-family: $font-family-sub;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #333;
+
+    @include mq (tab) {
+        font-size: rem(32);
+    }
+}

@@ -1,0 +1,35 @@
+
+.p-topics-info {
+    border-bottom: rem(1) solid #DDDDDD;
+    padding-bottom: rem(10);
+
+    &+& {
+        margin-top: rem(20);
+    }
+}
+
+.p-topics-info__date ,
+.p-topics-info__title {
+    display: block;
+}
+
+.p-topics-info__date {
+    font-family: $font-family-sub;
+    color: #CECECE;
+    font-weight: 700;
+    font-size: rem(10);
+    letter-spacing: 0.032em;
+    line-height: 1;
+}
+
+.p-topics-info__title {
+    font-weight: 700;
+    font-size: rem(12);
+    letter-spacing: 0.068em;
+    line-height: (20 / 12);
+    padding-top: rem(11);
+
+    @include mq (tab) {
+        font-size: rem(14);
+    }
+}
